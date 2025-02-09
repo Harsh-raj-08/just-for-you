@@ -57,6 +57,10 @@ p {
     font-size: 22px;
 }
 
+.smallPara {
+    font-size: 16px;
+}
+
 .btn-container2 {
     display: flex;
     gap: 80px;
@@ -65,7 +69,7 @@ p {
 
 .btn-container3 {
     display: flex;
-    gap: 250px;
+    gap: 350px;
     margin-top: 50px;
 }
 
@@ -104,13 +108,24 @@ p {
 
 }
 
-.teano {
-    font-size: 20px;
-    width: 200px;
-    height: 100px;
-}
 
 .button:hover {
     transform: scale(1.4);
     cursor: url("resources/pandacursor.png"), auto;
+}
+
+.teano {
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    cursor: url("resources/cryPandacursor.png"), auto;
+}
+
+.teano:hover {
+    cursor: url("resources/cryPandacursor.png"), auto;
+
+}
+
+.no-btn:hover {
+    cursor: url("resources/cryPandacursor.png"), auto;
 }
