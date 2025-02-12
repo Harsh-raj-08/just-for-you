@@ -8,6 +8,11 @@ body {
     cursor: url("resources/pandacursormain.png"), auto;
 }
 
+@font-face {
+    font-family: "baloku";
+    src: url("resources/fonts/balonku-font/BalonkuRegular-la1w.otf");
+}
+
 .main-container {
     width: 100vw;
     height: 100vh;
@@ -106,7 +111,7 @@ img {
 }
 
 
-button {
+.btn {
     padding-block: 15px;
     padding-inline: 25px;
     border: none;
@@ -115,6 +120,8 @@ button {
     background-color: rgb(255, 122, 144);
     font-size: 20px;
     cursor: url("resources/pandacursor.png"), auto;
+    text-decoration: none;
+    font-family: "baloku";
 }
 
 
@@ -124,8 +131,17 @@ button {
     animation-delay: 0.6s;
 }
 
+.next-btn {
+    display: none;
+}
+
 .hide {
     animation: hide 0.6s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.appear {
+    animation: appear 0.6s ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -148,6 +164,16 @@ button {
 
     to {
         opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
