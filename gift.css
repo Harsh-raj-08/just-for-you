@@ -122,6 +122,11 @@ img {
     cursor: url("resources/pandacursor.png"), auto;
     text-decoration: none;
     font-family: "baloku";
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
 }
 
 
