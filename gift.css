@@ -38,12 +38,22 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
-
 }
 
 .gifts {
     width: 270px;
     position: absolute;
+    z-index: 2;
+}
+
+.gifts img {
+    width: 270px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.gifts img:hover {
+    transform: scale(1.1);
 }
 
 .jhumka {
@@ -150,6 +160,61 @@ img {
     animation-fill-mode: forwards;
 }
 
+
+.text-box {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    z-index: 200;
+    top: -200px;
+    left: 0px;
+    transition: .7s;
+    visibility: hidden;
+
+}
+
+.text-ani {
+    visibility: visible;
+    transform-origin: bottom;
+    transform: scale(0);
+    animation: text-box .7s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.text-box img {
+    width: 300px;
+}
+
+.text-box h3 {
+    font-family: "baloku";
+    color: #FB96AC;
+    margin-bottom: 10px;
+    font-size: 24px;
+
+}
+
+.text-box p {
+    font-family: "cutie";
+}
+
+.text-box .text {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 70%;
+
+}
+
+.bracelet-text {
+    top: 0px;
+    left: 180px;
+}
+
+.jhumka-text {
+    top: 50px;
+    left: 100px;
+}
+
 /* animations */
 
 @keyframes box-cap {
@@ -229,5 +294,15 @@ img {
 
     to {
         transform: translate(-450px, -250px);
+    }
+}
+
+@keyframes text-box {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
